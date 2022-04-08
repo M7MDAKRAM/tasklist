@@ -7,15 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        @foreach ($tasks as $task)
-        <li>
-          <a href="/task/{{$task->id}}">{{$task->name}}</a>
-        </li>
-        <li>
-            {{$task->describtion}}
-        </li>
-        @endforeach
-    </ul>
+    <h1>name: {{$task->name}}</h1>
+    <h2>describtion: {{$task->describtion}}</h2>
 </body>
 </html>
